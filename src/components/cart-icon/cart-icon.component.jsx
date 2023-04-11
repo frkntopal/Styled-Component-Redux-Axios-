@@ -1,22 +1,18 @@
-import  { ReactComponent as ShoppingIcon} from '../../assets/shopping-bag.svg'
 import { useSelector } from 'react-redux'
-import { useState } from 'react'
-
-import './cart-icon.styles.scss'
 
 
-const CartIcon = () =>{
+import './cart-icon.styles.jsx'
+import { CartContainer, ItemCount, ShoppingBagIcon } from './cart-icon.styles.jsx';
 
-    const [isCartOpen, setIsCartOpen] = useState(false);
+
+const CartIcon = () =>{    
     const {quantity} = useSelector ((store) => store.cart);
 
-    const toogleIsCartOpen = () => setIsCartOpen (!isCartOpen)
-
     return (
-        <div className="cart-icon-container" onClick={toogleIsCartOpen}>
-            <ShoppingIcon className='shopping-icon'/>
-            <span className="item-count">{quantity}</span>
-        </div>
+        <CartContainer>
+            <ShoppingBagIcon/>
+            <ItemCount>{quantity}</ItemCount>
+        </CartContainer>
     )
 
 }
