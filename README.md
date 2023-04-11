@@ -36,6 +36,12 @@ Also I have installed the 'vite-plugin-svgr' library in order to integrate svg f
    ```
 - > **Setup:** The **redux-thunk** , **_npm_** install redux-thunk or **_yarn_** add redux-thunk
 
+## Styled-Component 
+
+-  **_Styled-components_** is a popular library for styling React components in JavaScript applications. It allows you to write CSS-in-JS, which means you can define your component styles using JavaScript code rather than external CSS files. Styled-components provide a way to encapsulate styles within individual components, making it easier to manage and reuse styles across your application.
+
+
+
 ![Ekran Görüntüsü (111)](https://user-images.githubusercontent.com/100241189/231208339-61b14ab5-dea7-4354-b45b-dc56d27f6fae.png)
 
 
